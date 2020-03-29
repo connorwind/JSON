@@ -104,13 +104,14 @@ function b(){
     }
   ]
 }
-       
+       tblRow = ""
             for (var i = 0; i <11;i++)
             {
-          let tblRow = "<tr>" + "<td>" + obj.songs[i].title + "</td>" +
-           "<td>" + obj.songs[i].artist + "</td>" + "<td>" + obj.songs[i].genre + "</td>" + "<td>" + obj.songs[i].year_released + "</td>" + "</tr>"
-           $(tblRow).appendTo("#d");
+           tblRow = tblRow +"<tr>" + "<td>" + obj.songs[i].title + "</td>" +
+           "<td>" + obj.songs[i].artist + "</td>" + "<td>" + obj.songs[i].genre + "</td>" + "<td>" + obj.songs[i].year_released + "</td>" + "</tr>";
+           
           }
+        document.getElementById('d').innerHTML = tblRow;
 
    }
 
@@ -120,9 +121,8 @@ function b(){
 
 
 
-<script>
-    $(document).ready(function(){
-        $("button").click(function(){
+<script >
+function filterTab(){
            
             for( var i = 1; i < 12; i++)
             {
@@ -145,8 +145,7 @@ function b(){
             }
 
             /*document.write(document.getElementById("data").rows[1].cells[2].innerHTML);*/
-        });
-    });
+        }
 
 </script>
 </head>
@@ -171,7 +170,7 @@ function b(){
 </div>
 
 <h3>
-    Filter Table2
+    Filter Table3
 </h3>
 <select id="Genres" name="asdf" >
     <option value="All">All</option>
