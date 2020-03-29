@@ -31,7 +31,8 @@
 <script>
 
 
-$(document).ready(function(){
+
+function b(){
        obj= {
         
   "songs": [
@@ -106,13 +107,12 @@ $(document).ready(function(){
        
             for (var i = 0; i <11;i++)
             {
-                document.write(obj.songs[i].artist)
           let tblRow = "<tr>" + "<td>" + obj.songs[i].title + "</td>" +
            "<td>" + obj.songs[i].artist + "</td>" + "<td>" + obj.songs[i].genre + "</td>" + "<td>" + obj.songs[i].year_released + "</td>" + "</tr>"
            $(tblRow).appendTo("#d");
           }
 
-   });
+   }
 
 
 
@@ -151,7 +151,7 @@ $(document).ready(function(){
 </script>
 </head>
 
-<body>
+<body onload="b()">
 <h1>SETLIST</h1>
 <div class="wrapper">
 <div class="profile" style = "text-align: center;">
@@ -184,7 +184,7 @@ $(document).ready(function(){
     
 </select>
 
-<button onclick="filterTab()">Filter Table</button>
+<button onclick="filterTab()">Filter Table3</button>
 
 
 </body>
