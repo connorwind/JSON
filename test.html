@@ -122,9 +122,8 @@ function b(){
 
 
 <script >
-    $(document).ready(function(){
-        $("button").click(function(){
-           document.writeln("asdf")
+function filterTab(){
+           
             for( var i = 1; i < 12; i++)
             {
                 document.getElementById("data").rows[i].style = "display:table-row";
@@ -146,8 +145,7 @@ function b(){
             }
 
             /*document.write(document.getElementById("data").rows[1].cells[2].innerHTML);*/
-        });
-    });
+        }
 
 </script>
 </head>
@@ -172,7 +170,7 @@ function b(){
 </div>
 
 <h3>
-    Filter Table2
+    Filter Table3
 </h3>
 <select id="Genres" name="asdf" >
     <option value="All">All</option>
