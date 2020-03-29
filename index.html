@@ -33,23 +33,80 @@
 
 $(document).ready(function(){
        obj= {
-    "songs":[
-                {"artist": "The Beatles", "title": "Help!", "genre":"Rock", "year_released": "1965" },
-                {"artist": "Crowder", "title": "I Am ", "genre":"Christian Gospel", "year_released": "2014" },
-                {"artist": "R. Kelly", "title": "Trapped in the Closet", "genre":"Soul", "year_released": "2005" },
-                {"artist": "Kendrick Lamar", "title": "i", "genre":"Hip-Hop", "year_released": "2014" },
-                {"artist": "Nicki Minaj", "title": "Only", "genre":"Hip-Hop", "year_released": "2014" },
-                {"artist": "Khalid", "title": "Talk", "genre":"Soul", "year_released": "2019" },
-                {"artist": "Hall & Oates", "title": "kiss On My List", "genre":"Pop", "year_released": "1980" },
-                {"artist": "Robert Plant & Jimmy Page", "title": "Please Read The Letter.", "genre":"Pop", "year_released": "1998" },
-                {"artist": "Lady Antebellum", "title": "Need You Now", "genre":"Country", "year_released": "2009" },
-                {"artist": "Carly Rae Jepsen", "title": "Call Me Maybe", "genre":"Pop", "year_released": "2011" },
-                {"artist": "THE POLICE", "title": "So Lonely", "genre":"Pop", "year_released": "1978" }
-             ]
-            }
+        
+  "songs": [
+    {
+      "artist": "The Beatles",
+      "title": "Help!",
+      "genre": "Rock",
+      "year_released": "1965"
+    },
+    {
+      "artist": "Crowder",
+      "title": "I Am ",
+      "genre": "Christian Gospel",
+      "year_released": "2014"
+    },
+    {
+      "artist": "R. Kelly",
+      "title": "Trapped in the Closet",
+      "genre": "Soul",
+      "year_released": "2005"
+    },
+    {
+      "artist": "Kendrick Lamar",
+      "title": "i",
+      "genre": "Hip-Hop",
+      "year_released": "2014"
+    },
+    {
+      "artist": "Nicki Minaj",
+      "title": "Only",
+      "genre": "Hip-Hop",
+      "year_released": "2014"
+    },
+    {
+      "artist": "Khalid",
+      "title": "Talk",
+      "genre": "Soul",
+      "year_released": "2019"
+    },
+    {
+      "artist": "Hall & Oates",
+      "title": "kiss On My List",
+      "genre": "Pop",
+      "year_released": "1980"
+    },
+    {
+      "artist": "Robert Plant & Jimmy Page",
+      "title": "Please Read The Letter.",
+      "genre": "Pop",
+      "year_released": "1998"
+    },
+    {
+      "artist": "Lady Antebellum",
+      "title": "Need You Now",
+      "genre": "Country",
+      "year_released": "2009"
+    },
+    {
+      "artist": "Carly Rae Jepsen",
+      "title": "Call Me Maybe",
+      "genre": "Pop",
+      "year_released": "2011"
+    },
+    {
+      "artist": "THE POLICE",
+      "title": "So Lonely",
+      "genre": "Pop",
+      "year_released": "1978"
+    }
+  ]
+}
        
             for (var i = 0; i <11;i++)
             {
+                document.write(obj.songs[i].artist)
           let tblRow = "<tr>" + "<td>" + obj.songs[i].title + "</td>" +
            "<td>" + obj.songs[i].artist + "</td>" + "<td>" + obj.songs[i].genre + "</td>" + "<td>" + obj.songs[i].year_released + "</td>" + "</tr>"
            $(tblRow).appendTo("#d");
