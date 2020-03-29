@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -112,10 +113,11 @@ function b(){
            
           }
         document.getElementById('d').innerHTML = tblRow;
-
+        sample = JSON.stringify(obj);
+	document.getElementById("str").innerHTML = sample;
    }
 
-
+    
 
 </script>
 
@@ -151,6 +153,9 @@ function filterTab(){
 </head>
 
 <body onload="b()">
+
+<h3>Stringified</h3>
+<p id="str">afadsf</p>
 <h1>SETLIST</h1>
 <div class="wrapper">
 <div class="profile" style = "text-align: center;">
@@ -170,7 +175,7 @@ function filterTab(){
 </div>
 
 <h3>
-    Filter Table3
+    Filter Table
 </h3>
 <select id="Genres" name="asdf" >
     <option value="All">All</option>
@@ -184,6 +189,9 @@ function filterTab(){
 </select>
 
 <button onclick="filterTab()">Filter Table</button>
+
+
+
 
 
 </body>
